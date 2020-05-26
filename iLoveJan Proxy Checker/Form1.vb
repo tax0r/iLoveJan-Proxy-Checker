@@ -84,7 +84,6 @@ Public Class Form1
             For i = 0 To UBound(proxies)
                 text = proxies(i)
                 objWriter.WriteLine(text)
-                MsgBox(text)
             Next
             objWriter.Close()
         End If
