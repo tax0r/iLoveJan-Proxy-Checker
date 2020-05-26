@@ -69,10 +69,8 @@ Public Class Form1
     Private Sub ThirteenCheckBox1_CheckedChanged(sender As Object) Handles ThirteenCheckBox1.CheckedChanged
         If (ThirteenCheckBox1.Checked = True) Then
             autoExport = True
-            exportBool.Text = "true"
         Else
             autoExport = False
-            exportBool.Text = "false"
         End If
     End Sub
 

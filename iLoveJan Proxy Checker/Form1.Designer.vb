@@ -38,7 +38,6 @@ Partial Class Form1
         Me.ThirteenButton1 = New iLoveJan_Proxy_Checker.ThirteenButton()
         Me.ProxylistTextBox = New iLoveJan_Proxy_Checker.ThirteenTextBox()
         Me.ThirteenControlBox1 = New iLoveJan_Proxy_Checker.ThirteenControlBox()
-        Me.exportBool = New System.Windows.Forms.Label()
         Me.ThirteenForm1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,7 +50,6 @@ Partial Class Form1
         Me.ThirteenForm1.AccentColor = System.Drawing.Color.DodgerBlue
         Me.ThirteenForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.ThirteenForm1.ColorScheme = iLoveJan_Proxy_Checker.ThirteenForm.ColorSchemes.Dark
-        Me.ThirteenForm1.Controls.Add(Me.exportBool)
         Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox1)
         Me.ThirteenForm1.Controls.Add(Me.dead)
         Me.ThirteenForm1.Controls.Add(Me.alive)
@@ -234,15 +232,6 @@ Partial Class Form1
         Me.ThirteenControlBox1.TabIndex = 0
         Me.ThirteenControlBox1.Text = "ThirteenControlBox1"
         '
-        'exportBool
-        '
-        Me.exportBool.AutoSize = True
-        Me.exportBool.Location = New System.Drawing.Point(227, 160)
-        Me.exportBool.Name = "exportBool"
-        Me.exportBool.Size = New System.Drawing.Size(45, 17)
-        Me.exportBool.TabIndex = 14
-        Me.exportBool.Text = "Label5"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -273,6 +262,5 @@ Partial Class Form1
     Friend WithEvents dead As System.Windows.Forms.Label
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents ThirteenCheckBox1 As iLoveJan_Proxy_Checker.ThirteenCheckBox
-    Friend WithEvents exportBool As System.Windows.Forms.Label
 
 End Class
