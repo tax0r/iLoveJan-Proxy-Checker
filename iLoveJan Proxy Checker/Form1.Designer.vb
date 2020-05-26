@@ -88,6 +88,7 @@ Partial Class Form1
         'dead
         '
         Me.dead.AutoSize = True
+        Me.dead.ForeColor = System.Drawing.Color.Red
         Me.dead.Location = New System.Drawing.Point(224, 116)
         Me.dead.Name = "dead"
         Me.dead.Size = New System.Drawing.Size(41, 17)
@@ -97,6 +98,7 @@ Partial Class Form1
         'alive
         '
         Me.alive.AutoSize = True
+        Me.alive.ForeColor = System.Drawing.Color.Lime
         Me.alive.Location = New System.Drawing.Point(224, 99)
         Me.alive.Name = "alive"
         Me.alive.Size = New System.Drawing.Size(42, 17)
