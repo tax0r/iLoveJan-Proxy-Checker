@@ -22,7 +22,11 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.ThirteenForm1 = New iLoveJan_Proxy_Checker.ThirteenForm()
+        Me.ThirteenCheckBox1 = New iLoveJan_Proxy_Checker.ThirteenCheckBox()
+        Me.dead = New System.Windows.Forms.Label()
+        Me.alive = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.timeoutTextBox = New iLoveJan_Proxy_Checker.ThirteenTextBox()
         Me.boolState = New System.Windows.Forms.Label()
@@ -34,14 +38,23 @@ Partial Class Form1
         Me.ThirteenButton1 = New iLoveJan_Proxy_Checker.ThirteenButton()
         Me.ProxylistTextBox = New iLoveJan_Proxy_Checker.ThirteenTextBox()
         Me.ThirteenControlBox1 = New iLoveJan_Proxy_Checker.ThirteenControlBox()
+        Me.exportBool = New System.Windows.Forms.Label()
         Me.ThirteenForm1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'ThirteenForm1
         '
         Me.ThirteenForm1.AccentColor = System.Drawing.Color.DodgerBlue
         Me.ThirteenForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.ThirteenForm1.ColorScheme = iLoveJan_Proxy_Checker.ThirteenForm.ColorSchemes.Dark
+        Me.ThirteenForm1.Controls.Add(Me.exportBool)
+        Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox1)
+        Me.ThirteenForm1.Controls.Add(Me.dead)
+        Me.ThirteenForm1.Controls.Add(Me.alive)
         Me.ThirteenForm1.Controls.Add(Me.Label4)
         Me.ThirteenForm1.Controls.Add(Me.timeoutTextBox)
         Me.ThirteenForm1.Controls.Add(Me.boolState)
@@ -61,6 +74,36 @@ Partial Class Form1
         Me.ThirteenForm1.Size = New System.Drawing.Size(401, 411)
         Me.ThirteenForm1.TabIndex = 0
         Me.ThirteenForm1.Text = "Proxy Checker by iLoveJan"
+        '
+        'ThirteenCheckBox1
+        '
+        Me.ThirteenCheckBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.ThirteenCheckBox1.Checked = True
+        Me.ThirteenCheckBox1.ColorScheme = iLoveJan_Proxy_Checker.ThirteenCheckBox.ColorSchemes.Dark
+        Me.ThirteenCheckBox1.ForeColor = System.Drawing.Color.White
+        Me.ThirteenCheckBox1.Location = New System.Drawing.Point(227, 136)
+        Me.ThirteenCheckBox1.Name = "ThirteenCheckBox1"
+        Me.ThirteenCheckBox1.Size = New System.Drawing.Size(86, 17)
+        Me.ThirteenCheckBox1.TabIndex = 13
+        Me.ThirteenCheckBox1.Text = "Auto-Export"
+        '
+        'dead
+        '
+        Me.dead.AutoSize = True
+        Me.dead.Location = New System.Drawing.Point(224, 116)
+        Me.dead.Name = "dead"
+        Me.dead.Size = New System.Drawing.Size(41, 17)
+        Me.dead.TabIndex = 12
+        Me.dead.Text = "Dead:"
+        '
+        'alive
+        '
+        Me.alive.AutoSize = True
+        Me.alive.Location = New System.Drawing.Point(224, 99)
+        Me.alive.Name = "alive"
+        Me.alive.Size = New System.Drawing.Size(42, 17)
+        Me.alive.TabIndex = 11
+        Me.alive.Text = "Alive: "
         '
         'Label4
         '
@@ -82,7 +125,7 @@ Partial Class Form1
         Me.timeoutTextBox.Name = "timeoutTextBox"
         Me.timeoutTextBox.Size = New System.Drawing.Size(100, 25)
         Me.timeoutTextBox.TabIndex = 9
-        Me.timeoutTextBox.Text = "10000"
+        Me.timeoutTextBox.Text = "1000"
         '
         'boolState
         '
@@ -191,6 +234,15 @@ Partial Class Form1
         Me.ThirteenControlBox1.TabIndex = 0
         Me.ThirteenControlBox1.Text = "ThirteenControlBox1"
         '
+        'exportBool
+        '
+        Me.exportBool.AutoSize = True
+        Me.exportBool.Location = New System.Drawing.Point(227, 160)
+        Me.exportBool.Name = "exportBool"
+        Me.exportBool.Size = New System.Drawing.Size(45, 17)
+        Me.exportBool.TabIndex = 14
+        Me.exportBool.Text = "Label5"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -217,5 +269,10 @@ Partial Class Form1
     Friend WithEvents boolState As System.Windows.Forms.Label
     Friend WithEvents timeoutTextBox As iLoveJan_Proxy_Checker.ThirteenTextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents alive As System.Windows.Forms.Label
+    Friend WithEvents dead As System.Windows.Forms.Label
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents ThirteenCheckBox1 As iLoveJan_Proxy_Checker.ThirteenCheckBox
+    Friend WithEvents exportBool As System.Windows.Forms.Label
 
 End Class
